@@ -8,6 +8,8 @@ import { useNavigate } from 'react-router-dom'
 const Banner = () => {
     const navigate = useNavigate()
 
+    const porfolio = "jacobtruong.com"
+
 
     const playgroundHandler = () => {
         navigate('/playground')
@@ -18,7 +20,7 @@ const Banner = () => {
             <img src={icon} alt="godzila-icon" className='icon-logo' />
             <div className='logo-container'>
                 <h1 className='logo' style={{ fontSize: '60px' }}>Godzillapi
-                    <span style={{ fontSize: '15px', fontWeight: '0' }}> A simple project by <Link className='profile'>Jacob Truong</Link></span>
+                    <span style={{ fontSize: '15px', fontWeight: '0' }}> A simple project by <Link className='profile' to={porfolio}>Jacob Truong</Link></span>
                 </h1>
                 <h4 className='logo' style={{ fontSize: '30px' }}>ゴジラのAPI</h4>
                     <button className='playground' onClick={playgroundHandler}>Go to API Playground</button>
