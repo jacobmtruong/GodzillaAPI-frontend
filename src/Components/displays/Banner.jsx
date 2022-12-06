@@ -1,14 +1,11 @@
 import React from 'react'
 import '../styles/banner-style.css'
-import { Link } from 'react-router-dom'
 import icon from '../images/icon.png'
 import { useNavigate } from 'react-router-dom'
 
 
 const Banner = () => {
     const navigate = useNavigate()
-
-    const porfolio = { pathname: "www.jacobtruong.com"}
 
 
     const playgroundHandler = () => {
@@ -20,7 +17,7 @@ const Banner = () => {
             <img src={icon} alt="godzila-icon" className='icon-logo' />
             <div className='logo-container'>
                 <h1 className='logo' style={{ fontSize: '60px' }}>Godzillapi
-                    <span style={{ fontSize: '15px', fontWeight: '0' }}> A simple project by <a className='profile' href='https://jacobtruong.com' target="_blank" rel='nonopener'>Jacob Truong</a></span>
+                    <span style={{ fontSize: '15px', fontWeight: '0' }}> A simple project by <a className='profile' href='https://jacobtruong.com'>Jacob Truong</a></span>
                 </h1>
                 <h4 className='logo' style={{ fontSize: '30px' }}>ゴジラのAPI</h4>
                     <button className='playground' onClick={playgroundHandler}>Go to API Playground</button>
