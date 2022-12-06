@@ -1,0 +1,96 @@
+* {
+    /* outline: 1px solid black; */
+}
+
+.list-container {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+}
+
+
+.list-children-one ul:nth-child(2) {
+    border: 2px solid black;
+    padding: 20px 40px;
+    width: fit-content;
+}
+
+.list-children-three {
+    width: fit-content;
+}
+
+.list-children-two {
+    width: fit-content;
+}
+
+li {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.example {
+    font-weight: 700;
+    font-size: 17px;
+    margin: 0;
+}
+
+.highlighted {
+    background-color: rgba(224, 251, 251, 0.792);
+    width: fit-content;
+    padding: 2px 10px;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    font-weight: 900;
+    font-size: 17px;
+}
+
+td {
+    font-weight: 500;
+}
+
+table,
+th,
+td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 10px 20px;
+}
+
+td:first-child {
+    text-align: center;
+    background-color: rgba(224, 251, 251, 0.792);
+}
+
+/* td:not(:first-child):not(:last-child) .list-children-two{
+    width: 300px;
+}
+
+td:last-child .list-children-two{
+    padding-left: 20px;
+    width: 100px;
+    text-align: center;
+    ;
+} */
+
+/* td:last-child .list-children-three {
+    width: 900px;
+}
+td:first-child .list-children-three {
+    width: 900px;
+} */
+
+
+.fieldreference {
+    font-family: 'Godzilla';
+    font-size: 35px;
+    margin: 0;
+}
