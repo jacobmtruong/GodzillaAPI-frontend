@@ -20,7 +20,7 @@ const FormInput = () => {
     }
     axios.get(`http://localhost:8000/api/monster/year/${year}`)
       .then(res => {
-        if (res.data == 0) {
+        if (res.data === 0) {
           setError("Cannot find the year monster was created in our database")
         } else {
         let result = res.data
@@ -44,7 +44,7 @@ const FormInput = () => {
     }
     axios.get(`http://localhost:8000/api/monster/name/${name}`)
       .then(res => {
-        if (res.data == 0) {
+        if (res.data === 0) {
           setError("Cannot find the Monster's name in our database")
         } else {
           let result = res.data
